@@ -11,3 +11,7 @@ jobs:
         environment:
           TZ: "/usr/share/zoneinfo/America/Los_Angeles"
           JVM_OPTS: -Xmx512m -Xms512m
+          command: "docker run -p 9200:9200 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:5.4.3
+"
+  steps:
+      - run: /docker-entrypoint.sh
