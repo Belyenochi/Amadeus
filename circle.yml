@@ -15,4 +15,6 @@ jobs:
     ports:
       - "9200:9200"
   steps:
-      - run: /docker-entrypoint.sh
+      - run:
+          name: test
+          command: ls
