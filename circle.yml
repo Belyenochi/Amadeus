@@ -11,7 +11,7 @@ jobs:
       environment:
       - "transport.host=localhost"
       - "bootstrap.system_call_filter=false"
-    ports:
+      ports:
       - "9200:9200"
   steps:
       - run:
