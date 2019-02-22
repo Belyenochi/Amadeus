@@ -15,7 +15,3 @@ jobs:
         - network.host: 127.0.0.1
         - http.port: 9250
         - discovery.type: single-node
-  steps:
-      - run:
-          name: build
-          command: ls
